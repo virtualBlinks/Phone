@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #ex{
+        position: relative;
+        margin: auto;
+        border: 15px solid rgba(0, 0, 0, 0.874);
+        border-top: 85px solid rgba(15, 15, 15, 0.658);
+        border-bottom: 85px solid rgba(15, 15, 15, 0.658) ;
+        box-shadow: 0px 0px 50px  rgba(7, 7, 7, 0.758) ;
+        height: 500px;
+        width: 320px;
+        border-radius: 15px;
+
+     }
+     #cont{
+        background-color: transparent;
+        /* background: linear-gradient(to left, rgba(81, 81, 245, 0.345), rgba(190, 190, 83, 0.304), rgba(158, 253, 158, 0.623)); */
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.758) inset;
+        height: 500px;
+        width: 320px;
+        border-radius: 0px 0px 2px 2px;
+     }
+     #top1{
+        background-color: rgb(151, 173, 178);
+        position: absolute;
+        height: 10px;
+        left:110px;
+        top: -50px;
+        width: 60px;
+        border-radius: 50px;
+       
+     }
+     #top2{
+        background-color: rgb(151, 173, 178);
+        position: absolute;
+        height: 10px;
+        left:200px;
+        top: -50px;
+        width: 10px;
+        border-radius: 100px;
+       
+     }
+
+     #but{
+        position: absolute;
+        top: 100px;
+        right: -16px;
+        height: 100px;
+        width: 14px;
+        background-color: brown;
+        box-shadow: 0px 0px 50px 50px rgba(63, 34, 34, 0.824) inset;
+        border-radius: 50px;
+     }
+     #but2{
+        position: absolute;
+        top: 100px;
+        left: -16px;
+        height: 50px;
+        width: 14px;
+        background-color: rgba(233, 117, 117, 0.555);        
+        box-shadow: 0px 0px 50px 50px rgba(63, 34, 34, 0.824) inset;
+        border-radius: 50px;
+     }
+     #but3{
+        position: absolute;
+        top: 160px;
+        left: -16px;
+        height: 50px;
+        width: 14px;
+        background-color: rgba(233, 117, 117, 0.555); 
+        box-shadow: 0px 0px 100px 50px rgba(63, 34, 34, 0.824) inset;
+        border-radius: 50px;
+     }
+     #vol{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 10px;
+        width: 20px;
+        background-color: rgba(255, 255, 255, 0.913);
+        box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.596) inset;
+        border-radius: 50px;
+        display: none;
+     }
+     #comb{
+         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 5px;
+     }
+     #date{
+        display: flex;
+        font-size: 14px;
+        font-weight: 700;
+        /* position: absolute;
+        left: 5px;
+        top: -10px; */
+     }
+     #network{
+        /* position: absolute;
+        top: 10px;
+        right: 5px; */
+       display: flex;
+       align-items: center;
+       font-size: 14px;
+       gap: 5px;
+
+     }
+     .sig{
+        font-size: 8px;
+     }
+     .wif{
+        font-size: 10px;
+     }
+     #but4{
+        height: 65px;
+        width: 65px;
+        border-radius: 100%;
+        background-color:rgba(123, 123, 123, 0.658) ;
+        box-shadow: 0px 0px 20px white inset;
+        border: none;
+        position: absolute;
+        left: 120px;
+        bottom: -75px;
+
+     }
+   
+    </style>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/77700015b1.js" crossorigin="anonymous"></script>
+    <div id="ex">
+        <div id="cont">
+            <div id="comb">
+            <div id="date">
+                <p id="p1"></p>
+                <p id="p2"></p>
+            </div>
+            <div id="network">
+            <i class="fa-solid fa-wifi fa-fade wif"></i>
+            <i class="fa-solid fa-signal fa-beat sig"></i>
+            <i class="fa-solid fa-battery-full bat"></i>
+            <!-- <p>H <SUP>+</SUP></p> -->
+        </div>
+        </div>
+        </div>
+        <div id="top1"></div>
+        <div id="top2"></div>
+        <button id="but" onclick="display( )"></button>
+        <button id="but2" onclick="volume( )"></button>
+        <button id="but3" onclick="volumee( )"></button>
+        <div id="vol"></div>
+         <button id="but4"></button>
+    </div>
+
+
+
+<script>
+    let cont = document.getElementById("cont")
+    let but = document.getElementById("but")
+    let but2 = document.getElementById("but2")
+    let but3 = document.getElementById("but3")
+    let p1 = document.getElementById("p1")
+    let p2 = document.getElementById("p2")
+    let wif = document.querySelector(".wif")
+    let sig = document.querySelector(".sig")
+    let bat = document.querySelector(".bat")
+    
+    
+
+
+    function display() {
+   
+   if ( document.getElementById("cont").style.backgroundColor == "black") {
+       document.getElementById("cont").style.backgroundColor = "lightGreen"
+       p1.style.color = "white"
+       p2.style.color = "white"
+       wif.style.color = "white"
+       sig.style.color = "white"
+       bat.style.color = "white"
+    
+   
+
+   
+     
+   } else  {
+      document.getElementById("cont").style.backgroundColor = "black"
+      p1.style.color = "black"
+       p2.style.color = "black"
+       wif.style.color = "black"
+       sig.style.color = "black"
+       bat.style.color = "black"
+      
+          
+    } 
+  }
+
+
+  let vol = 0
+  function volume() {  
+      vol++     
+     let incr =  document.getElementById("vol")
+     incr.style.width =`${vol * 10}px`
+     incr.style.display = "block"
+     setTimeout(() => {        
+     incr.style.display = "none"
+    }, 10000);
+  
+
+  }
+  
+     vol == ''
+  function volumee( ) {
+    vol--
+     let incr =  document.getElementById("vol")
+     incr.style.width =`${vol * 10}px`
+     incr.style.display = "block"
+     setTimeout(() => {        
+     incr.style.display = "none"
+    }, 10000);
+  }
+  setInterval(()=>{
+        let date = new Date();
+        p1.innerHTML = `${date.getHours()}:`;
+        p2.innerHTML = `${date.getMinutes()}`;
+
+
+     })
+
+//  function display (ev){
+    
+//   if (  cont = document.getElementById === black){
+//            cont.target.style.backgroundColor = "white"
+//            cont.target.style.backgroundColor === "black"
+
+          
+//       } else{
+//         document.getElementById("cont")
+//         cont.target.style.backgroundColor = "black";
+
+//       }
+//  }
+
+</script>
+    
+</body>
+</html>
