@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="phone.css">
+</head>
+
+<body>
+   <script src="https://kit.fontawesome.com/77700015b1.js" crossorigin="anonymous"></script>
+   <div id="ex">
+      <div id="lightscreen"></div>
+      <div id="darkscreen"></div>
+
+      <div id="comb">
+         <div id="date">
+            <p id="p1"></p>
+            <p id="p2"></p>
+         </div>
+         <div id="network">
+            <i class="fa-solid fa-wifi fa-fade wif"></i>
+            <i class="fa-solid fa-signal fa-beat sig"></i>
+            <i class="fa-solid fa-battery-full bat"></i>
+         </div>
+      </div>
+
+      <div id="top1"></div>
+      <div id="top2"></div>
+      <p id="passwordpindisplay"></p>
+      <button id="but" onclick="display( )"></button>
+      <button id="but2" onclick="volume( )"></button>
+      <button id="but3" onclick="volumee( )"></button>
+      <div id="vol"></div>
+
+
+      <button onclick="digitHolder()" id="passwordcarrier"></button>
+      <div id="digits">
+         <button id="nobb" onclick="pinner(1)">1</button>
+         <button id="nobb" onclick="pinner(2)">2</button>
+         <button id="nobb" onclick="pinner(3)">3 </button>
+         <button id="nobb" onclick="pinner(4)">4</button>
+         <button id="nobb" onclick="pinner(5)">5</button>
+         <button id="nobb" onclick="pinner(6)">6</button>
+         <button id="nobb" onclick="pinner(7)">7</button>
+         <button id="nobb" onclick="pinner(8)">8</button>
+         <button id="nobb" onclick="pinner(9)">9</button>
+         <button class="clearback1" onclick="del1('clear')"><i class="bi bi-backspace gg"></i></button>
+         <button id="nobb" onclick="pinner(0)">0</button>
+         <button class="ok" onclick="pinner( )">Ok</button>
+      </div>
+
+
+
+
+      <main id="homepage"></main>
+
+      <div id="menu">
+         <button id="menunob1" onclick="calling()"><i class="fa-solid fa-phone"></i></button>
+         <div id="callpage">
+
+            <div id="phoneseaerchicon">
+               <span id="ph">Phone</span>
+               <div id="searchholder">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-bars"></i>
+               </div>
+
+            </div>
+
+            <p id="dignumberdisplay"></p>
+
+
+            <div id="number_holder">
+               <button id="nobb" onclick="typedDigit(1)">1</button>
+               <button id="nobb" onclick="typedDigit(2)">2</button>
+               <button id="nobb" onclick="typedDigit(3)">3 </button>
+               <button id="nobb" onclick="typedDigit(4)">4</button>
+               <button id="nobb" onclick="typedDigit(5)">5</button>
+               <button id="nobb" onclick="typedDigit(6)">6</button>
+               <button id="nobb" onclick="typedDigit(7)">7</button>
+               <button id="nobb" onclick="typedDigit(8)">8</button>
+               <button id="nobb" onclick="typedDigit(9)">9</button>
+               <button id="nobb" onclick="typedDigit('*')"><i class="fa-solid fa-asterisk"></i></button>
+               <button id="nobb" onclick="typedDigit(0)">0</button>
+               <button id="nobb" onclick="typedDigit('#')">#</button>
+               <button class="videocam" onclick="del1('clear')"><i class="fa-solid fa-video"></i></button>
+               <button class="fg" id="nobb" onclick="typedDigit(0)"><i class="fa-solid fa-phone fg"></i></button>
+               <button class="clearback2" onclick="del1('clear')"><i class="bi bi-backspace gg"></i></button>
+            </div>
+
+            <div id="callpageoptions">
+               <span id="dotted">keypad</span>
+               <span id="dotted">Recents</span>
+               <span id="dotted">Contacs</span>
+               <span id="dotted">Places</span>
+            </div>
+         </div>
+
+
+         <button id="menunob2" onclick="menu()"><i class="fa-solid fa-message"></i></button>
+         <button id="menunob3" onclick="menu()"><i class="fa-solid fa-camera"></i></button>
+         <button id="menunob4" onclick="menu()"><i class="fa-solid fa-address-book"></i> </button>
+      </div>
+
+      <div id="callingnum"></div>
+   </div>
+
+
+
+
+   <script src="phone.js"></script>
+
+</body>
+
+</html>

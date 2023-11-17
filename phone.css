@@ -1,0 +1,365 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#ex{
+    position: relative;
+    margin: auto;
+    border: 15px solid rgba(0, 0, 0, 0.874);
+    border-top: 85px solid rgba(15, 15, 15, 0.658);
+    border-bottom: 85px solid rgba(15, 15, 15, 0.658) ;
+    box-shadow: 0px 0px 50px  rgba(7, 7, 7, 0.758) ;
+    height: 500px;
+    width: 320px;
+    border-radius: 15px;
+    
+
+ }
+ #lightscreen{
+   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.758) inset;
+   height: 500px;
+   width: 320px;
+   border-radius: 0px 0px 2px 2px;
+   background-image: url(young-african-american-woman-shopping-with-colorful-packs-black-wall.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   color: white;
+   position: absolute;
+   top: 0;
+   display: none;
+ }
+ 
+ #darkscreen{
+   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.758) inset;
+   height: 500px;
+   width: 320px;
+   border-radius: 0px 0px 2px 2px;
+   background-color: rgb(185, 18, 18);
+   position: absolute;
+   top: 0;
+   display: none;
+
+  
+
+ }
+
+ 
+ #top1{
+    background-color: rgb(174, 216, 225);
+    position: absolute;
+    height: 10px;
+    left:110px;
+    top: -50px;
+    width: 60px;
+    border-radius: 50px;
+   
+ }
+ #top2{
+    background-color: rgb(133, 185, 197);
+    position: absolute;
+    height: 10px;
+    left:200px;
+    top: -50px;
+    width: 10px;
+    border-radius: 100px;
+   
+ }
+
+ #but{
+    position: absolute;
+    border: 1px solid white;
+    top: 100px;
+    right: -16px;
+    height: 100px;
+    width: 14px;
+    background-color: brown;
+    box-shadow: 0px 0px 50px 50px rgba(63, 34, 34, 0.824) inset;
+    border-radius: 50px;
+ }
+ #but2{
+    position: absolute;
+    top: 100px;
+    left: -16px;
+    height: 50px;
+    width: 14px;
+    background-color: rgba(233, 117, 117, 0.555);        
+    box-shadow: 0px 0px 50px 50px rgba(63, 34, 34, 0.824) inset;
+    border-radius: 50px;
+ }
+ #but3{
+    position: absolute;
+    top: 160px;
+    left: -16px;
+    height: 50px;
+    width: 14px;
+    background-color: rgba(233, 117, 117, 0.555); 
+    box-shadow: 0px 0px 100px 50px rgba(63, 34, 34, 0.824) inset;
+    border-radius: 50px;
+ }
+ #vol{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 10px;
+    width: 20px;
+    background-color: rgba(255, 255, 255, 0.913);
+    box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.596) inset;
+    border-radius: 50px;
+    display: none;
+ }
+ #comb{
+     display: flex;
+    align-items: center;
+    gap: 230px;
+    padding: 0px 5px;
+    position: absolute;
+    top: 0px;
+    display: none;
+ }
+ #date{
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    /* position: absolute;
+    left: 5px;
+    top: -10px; */
+ }
+ #network{
+    /* position: absolute;
+    top: 10px;
+    right: 5px; */
+    color: white;
+   display: flex;
+   align-items: center;
+   font-size: 14px;
+   gap: 5px;
+
+ }
+ .sig{
+    font-size: 8px;
+ }
+ .wif{
+    font-size: 10px;
+ }
+ #passwordcarrier{
+    height: 65px;
+    width: 65px;
+    border-radius: 100%;
+    background-color:rgba(123, 123, 123, 0.658) ;
+    box-shadow: 0px 0px 20px white inset;
+    border: none;
+    position: absolute;
+    left: 120px;
+    bottom: -75px;
+
+ }
+ #nobb{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.148) inset;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+ }
+ .clearback1, .ok{
+  background-color: transparent;
+  width: 50px;
+    height: 50px;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  color: white;
+
+ }
+ #digits{
+  
+  position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    line-height: 20px;
+    height: 100px;
+    gap: 25px;
+    top: 180px;
+    left: 55px;
+    justify-content: center;
+    display: none;
+   
+} 
+#passwordpindisplay{
+  color: white;
+  width: 150px;
+  height: 40px;
+  left: 70px;
+  padding: 0px 20px ;
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  top: 40px;
+  
+}
+#homepage{
+   background-image:url(pexels-kampus-production-8829215.jpg) ;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+    height: 500px;
+    width: 320px;
+    border-radius: 0px 0px 2px 2px;
+    position: absolute;
+    bottom: 0px;
+    display: none;
+    /* z-index: 50; */
+}
+#menu{
+  position: absolute;
+  display: flex;
+  gap: 30px;
+  bottom: 10px;
+   gap: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: none;
+  
+
+}
+#menunob1{
+   position: relative;
+   bottom: 0px;
+  width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.148) inset;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+#menunob2{
+width: 50px;
+height: 50px;
+border: none;
+border-radius: 100%;
+background-color: white;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.148) inset;
+font-size: 17px;
+font-weight: 500;
+}
+
+#menunob3{
+
+width: 50px;
+height: 50px;
+border: none;
+border-radius: 100%;
+background-color: white;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.148) inset;
+font-size: 17px;
+font-weight: 500;
+}
+
+#menunob4{
+
+width: 50px;
+height: 50px;
+border: none;
+border-radius: 100%;
+background-color: white;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.148) inset;
+font-size: 17px;
+font-weight: 500;
+}
+#callpage{
+ position: absolute;
+  background-color: rgb(216, 77, 8);
+  height: 502px;
+    width: 320px;
+    border-radius: 0px 0px 2px 2px;
+    bottom:-10px ;
+    left: 0px;
+    display: none; 
+  
+}
+/* #number-dial{
+    position: absolute;
+    
+    width: 320px;
+    height: 510px;
+    background-color: blue;
+    display: none;
+    z-index: 1;
+} */
+#number_holder{
+   position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+   
+    gap: 25px;
+    top:100px;
+    left: 55px;
+    justify-content: center;
+    /* display: none; */
+    z-index: 1;
+}
+#callpageoptions{
+   position: absolute;
+   bottom: 10px;
+   display: flex;
+  gap: 30px;
+  justify-content: center;
+  left: 15px;
+  font-size: 17px;
+  color: white;
+  cursor: pointer;
+}
+#dotted:hover{
+   text-decoration: underline;
+}
+#phoneseaerchicon{
+   margin-top: 18px;
+   color: white;
+   display: flex;
+   justify-content: space-between;
+   padding: 5px 10px 0px 10px;
+   font-size: 14px;
+}
+#searchholder{
+   display: flex;
+   gap: 10px;
+}
+.fg{
+ color: green;
+ font-size: 24px;
+ font-weight: 600px;
+ text-align: center;
+ cursor: pointer;
+}
+.clearback2, .videocam{
+   background-color: transparent;
+   width: 50px;
+     height: 50px;
+   border: none;
+   border-radius: 100%;
+   cursor: pointer;
+   display: none;
+}
+
+#callingnum{
+   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.758) inset;
+   height: 500px;
+   width: 320px;
+   border-radius: 0px 0px 2px 2px;
+   background-color: black;
+ }
+
+  
