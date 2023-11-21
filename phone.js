@@ -20,35 +20,21 @@ let ok = document.querySelector(".ok")
 let videoCam = document.querySelector(".videocam")
 let clearBack2 = document.querySelector(".clearback2")
 let menu = document.getElementById("menu")
+let comb = document.getElementById("comb")
 
 
-// *************togle screen************8
-function display() {
-  if (darkScreen.style.display === "none") {
-    lightScreen.style.display = "block";
-    darkScreen.style.display = "none";
-    passwordCarrier.style.display = "block";
-    document.getElementById("digits").style.display = "none";
-    clearBack1.style.color = "white";
-    ok.style.color = "white";
-    // incr.style.display = "none";
-    // incr.style.zIndex = "1";
-   
+// *************togle lightscreen************8
+function toggleScreens() {
+  if (lightScreen.style.display === "none") {
+      lightScreen.style.display = "block";
+      darkScreen.style.display = "none";
+      comb.style.display = "flex";
+      incr.style.zIndex = "1";
+     
+      
   } else {
-    darkScreen.style.display = "block";
-    lightScreen.style.display = "none";
-    passwordCarrier.style.display = "none";
-    passwordPinDisplay.style.color = "white";
-    passwordPinDisplay.style.color = "white";
-    passwordCarrier.style.display = "block";
-    document.getElementById("digits").style.display = "none";
-    homePage.style.display = "none"; 
-    digits.style.display = "none";
-    menu.style.display = "none";
-    clearBack1.style.color = "white";
-    ok.style.color = "white";
-    // document.getElementById("vol").style.zIndex = "-1";   
-    // incr.style.zIndex = "1";    
+      lightScreen.style.display = "none";
+      darkScreen.style.display = "block";
   }
 }
 // *********volume*************
@@ -73,15 +59,11 @@ vol--
  incr.style.display = "none"
 }, 10000);
 }
-
 //********time**********
-
 setInterval(()=>{
     let date = new Date();
     p1.innerHTML = `${date.getHours()}:`;
     p2.innerHTML = `${date.getMinutes()}`;
-
-
  })
 // ******** key / number display*********
  function digitHolder( ) {
@@ -95,7 +77,6 @@ setInterval(()=>{
 
  }         
 }
-
 //*********password to passwordpindisplay*********
 let passwordPinDisplay = document.getElementById("passwordpindisplay");
 function del1() { 
@@ -121,18 +102,13 @@ if ( typePassword.length == 6 && typePassword !== phonePassword) {
   menu.style.display = "flex";
   digits.style.display = "none"
   passwordCarrier.style.display = "block";
-  document.getElementById("vol").style.zIndex = "1"
-  document.getElementById("p1").style.zIndex = "1"
-  document.getElementById("p2").style.zIndex = "1"
-  document.getElementById("network").style.zIndex = "1"
+comb.style.zIndex = "1"
 }
 }
-
 
 let dignumberDisplay = document.getElementById("dignumberdisplay")
 let callPage = document.getElementById("callpage")
 let numberHolder = document.getElementById("number_holder")
-// let numberDial = document.getElementById("number-dial")
 
 function calling() { 
   callPage.style.display = "block"
@@ -140,7 +116,6 @@ function calling() {
    date.style.color = "white"
    passwordPinDisplay.style.color = "white"
    numberHolder.style.display = "flex"
-  //  numberDial.style.display = "block"
    homePage.style.display = "none";
    
 }
@@ -156,7 +131,26 @@ function typedDigit(dialer) {
   videoCam.style.display = "block"
   videoCam.style.color = "white"
 }
-function del1() { 
+function del2() { 
   dignumberDisplay.innerHTML =  dignumberDisplay.innerHTML.slice(0, -1) 
 
-}     
+}   
+let callingNum = document.getElementById("callingnum")
+let numberCalling = document.getElementById("numbercalling")
+
+function greendialling( ) {
+ numberCalling.innerHTML = dignumberDisplay.innerHTML
+  callingNum.style.display = "block"
+  dignumberDisplay.style.display = "none"
+  menu.style.display = "none"
+
+}
+
+function callcutting(params) {
+  setTimeout(() => {        
+  callingNum.style.display = "none"
+   }, 1000);
+  homePage.style.display = "block";
+   
+}
+
